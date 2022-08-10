@@ -121,8 +121,15 @@ body {
     color: black;
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
     padding: 0.5rem;
-    
 }
+
+.main__title1:hover {
+    background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
+    border: none;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
 .main__title2 {
     position: relative;
     font-size: 1,5rem;
@@ -130,7 +137,8 @@ body {
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
     padding: 0.5rem;
 }
---
+
+
 
 .main__articlecontainer{
     display: flex;
@@ -159,8 +167,7 @@ body {
 
 .main__article__imgContainer {
     padding: 1rem;
- 
-
+    transform: rotateY( 180deg);
     
 }
 .main__article__textContainer p {
@@ -188,7 +195,13 @@ body {
     font-size: 2rem;
     color: black;
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
+}
 
+.main__section2__tit:hover {
+    background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
+    border: none;
+    transition: 0.3s;
+    border-radius: 1rem;
 }
 
 .main__section2_img {
@@ -196,6 +209,7 @@ body {
     align-content: center;
     justify-content: center;
     padding: 1rem;
+    transform: rotateY( 180deg);
 }
 .main__section2_subtit {
     position: relative;
@@ -204,17 +218,24 @@ body {
     font-size: 2rem;
     color: black;
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
-    
+
+}
+
+.main__section2_subtit:hover {
+    background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
+    border: none;
+    transition: 0.3s;
+    border-radius: 1rem;
 }
 
 .main__section2_article {
     position: relative;
-    height: 100%;
     text-align: center;
     font-size: 2rem;
     color: black;
-
     padding: 2rem;
+    transform-style: preserve-3d;
+    transform: rotateX(50deg) rotateY(5deg);
 }
 
 .main__form {
@@ -235,6 +256,13 @@ body {
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
     text-align: center;
     padding: 1rem;
+}
+
+.main__form__title:hover {
+    background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
+    border: none;
+    transition: 0.3s;
+    border-radius: 1rem;
 }
 
 .main__form__quest {
