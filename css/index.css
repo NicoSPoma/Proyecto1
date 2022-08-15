@@ -516,7 +516,11 @@ transition: 0.3s;
     background-color:  rgb(42, 157, 143);
     padding: 2rem;
     width: 40rem;
+    translate: center;
+    
 }
+
+
 
 #contacto__reset{
     border: none;
