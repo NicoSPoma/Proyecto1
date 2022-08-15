@@ -13,7 +13,6 @@ html {
 body {
     width: 100%;
     min-height: vh;
-    line-height: 1.5;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -48,7 +47,7 @@ body {
     display: grid;
     background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     position: fixed;
     width: 100%;
     font-weight: 700;
@@ -70,6 +69,10 @@ body {
     font-weight: 800;
     font-size: 2.8rem;
     text-shadow: 1px 1px 0 #E9C46A;
+    
+}
+.header__logo__text:hover {
+    color: black;
 }
 
 .header__nav {
@@ -78,19 +81,19 @@ body {
     text-align: center;
 }
 
-.header__ul {
+#header__ul {
      display: flex;
      flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
 }
-.header__li {
+#header__li {
     margin-inline: 1rem;
     border: none;
     border-radius: .4rem;
     padding: 0.1rem;
 }
-.header__li:hover{
+#header__li:hover{
     background-color: #E9C46A;
     border: none;
     transition: 0.3s;
@@ -99,7 +102,7 @@ body {
 
 /*Main*/
 
-.main {
+#main {
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -115,7 +118,7 @@ body {
     justify-items: center;
 }
 
-.main__title1 {
+#main__title1 {
     position: relative;
     font-size: 2rem;
     color: black;
@@ -123,21 +126,28 @@ body {
     padding: 0.5rem;
 }
 
-.main__title1:hover {
+#main__title1:hover {
     background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
     border: none;
     transition: 0.3s;
     border-radius: 1rem;
 }
 
-.main__title2 {
+#main__title2 {
     position: relative;
-    font-size: 1,5rem;
-    color: black;
+    
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
     padding: 0.5rem;
 }
 
+
+.container-xxl {
+max-width: 100%;
+}
+
+.article1__p {
+font-size: xx-large;
+}
 
 
 .main__articlecontainer{
@@ -158,7 +168,7 @@ body {
 }
 
 
-.main__article__textContainer {
+#main__article__textContainer {
     position: relative;
     padding: 1rem;
     
@@ -234,8 +244,7 @@ body {
     font-size: 2rem;
     color: black;
     padding: 2rem;
-    transform-style: preserve-3d;
-    transform: rotateX(50deg) rotateY(5deg);
+    
 }
 
 .main__form {
@@ -265,26 +274,29 @@ body {
     border-radius: 1rem;
 }
 
-.main__form__quest {
+#main__form__quest {
     position: relative;
     padding: 1rem;
+    translate: right;
+    text-align: center;
     
 }
 
-.main__form__img {
+#main__form__img {
     position: relative;
     padding: 1rem;
 }
 
 
 .main__form__table {
-    text-align: center;
+    
     padding: 2rem;
     background-color: rgb(67, 170, 139);
     border: none;
     border-radius: .4rem;
     margin-top: 2rem;
     margin-inline: 1rem;
+    
 
 }
 
@@ -356,7 +368,7 @@ padding: 0.5rem;
     margin-inline: 0.5rem;
 }
 
-.footer__input {
+#footer__input {
     display: block;
     width: 15rem;
     margin: auto;
@@ -365,19 +377,19 @@ padding: 0.5rem;
     padding: 0.5rem;
 }
 
-.footer__input__checkbox {
+#footer__input__checkbox {
     display: block;
-    width: 30rem;
+    
     margin: auto;
     border: none;
     background-color:  #E9C46A;
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
-.footer__input__checkbox:checked {
-    width: 15px;
-    height: 15px;
+#footer__input__checkbox:checked {
+    width: 5px;
+    height: 5px;
     accent-color: #E9C46A;
 }
 
@@ -385,13 +397,13 @@ padding: 0.5rem;
     text-align: center;
     padding: 1.5rem;
 }
-.footer__input__text {
+#footer__input__text {
     background-color: #E9C46A;
     padding: 2rem;
     width: 40rem;
 }
 
-.footer__reset{
+#footer__reset{
     border: none;
     background-color:  #E9C46A;
     padding: 1rem;
@@ -399,7 +411,7 @@ padding: 0.5rem;
     cursor: pointer;
 }
 
-.footer__submit {
+#footer__submit {
     border: none;
     background-color:  #E9C46A;
     padding: 1rem;
@@ -473,7 +485,7 @@ transition: 0.3s;
     margin-inline: 1rem;
 }
 
-.contacto__input {
+#contacto__input {
     display: block;
     width: 40rem;
     margin: auto;
@@ -482,7 +494,7 @@ transition: 0.3s;
     padding: 1rem;
 }
 
-.contacto__input__checkbox {
+#contacto__input__checkbox {
     display: block;
     width: 40rem;
     margin: auto;
@@ -500,13 +512,13 @@ transition: 0.3s;
     text-align: center;
     
 }
-.contacto__input__text {
+#contacto__input__text {
     background-color:  rgb(42, 157, 143);
     padding: 2rem;
     width: 40rem;
 }
 
-.contacto__reset{
+#contacto__reset{
     border: none;
     background-color:  rgb(42, 157, 143);
     padding: 1rem;
@@ -514,7 +526,7 @@ transition: 0.3s;
     cursor: pointer;
 }
 
-.contacto__submit {
+#contacto__submit {
     border: none;
     background-color:  rgb(42, 157, 143);
     padding: 1rem;

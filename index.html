@@ -3,9 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0'">
     <title>La Moviola</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-   
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
     <script src='main.js'></script>
 </head>
@@ -15,31 +17,51 @@
             <a class="header__logo__text">Moviola Cine-Bar</a>
          </div>
         
-         <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"><a href="./Index.html">Inicio</a></li>
-                <li class="header__li"><a href="./Secciones/Moviola club.html"> Club</a></li>
-                <li class="header__li"><a href="./Secciones/Carta.html">Carta</a></li>
-                <li class="header__li"><a href="./Secciones/Catalogo historico.html">Catalogo</a></li>
-                <li class="header__li"><a href="./Secciones/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+         <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="header__ul" class="navbar-nav">
+                  <li id="header__li" class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+                  </li>
+                  <li id="header__li" class="nav-item">
+                    <a class="nav-link active" href="./Secciones/Moviola club.html">Club</a>
+                  </li>
+                  <li id="header__li" class="nav-item">
+                    <a class="nav-link active" href="./Secciones/Carta.html">Carta</a>
+                  </li>
+                  <li id="header__li" class="nav-item">
+                    <a class="nav-link active" href="./Secciones/Catalogo historico.html" >Catalogo</a>
+                  </li>
+                  <li id="header__li" class="nav-item">
+                    <a class="nav-link active" href="./Secciones/Contacto.html" >Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="main">
+    <main id="main" class="container-xxl" >
         <section class="main__section">
-            <h1 class="main__title1">BIENVENIDOS AL PRIMER CINE-BAR DE LA CIUDAD</h1>
+            <br>
+            <br>
+
+            <h1 id="main__title1" class="h2"><b>BIENVENIDOS AL PRIMER CINE-BAR DE LA CIUDAD</b></h1>
     
-             <h2 class="main__title2">EL LUGAR QUE ESTABAS ESPERANDO</h2>
+             <h2 id="main__title1" class="h2"><b>EL LUGAR QUE ESTABAS ESPERANDO</b></h2>
         </section>
-        <section class="main__articleContainer">
+        <section class="row">
             <article class="main__article">
-                <div class="main__article__textContainer">
-                     <p>La moviola Cine-Bar es ese lugar de encuentro y celebracíon
+                <div id="main__article__textContainer" class="col-md-5" >
+                     <p class="article1__p">La moviola Cine-Bar es ese lugar de encuentro y celebracíon
                      donde vas a poder disfrutar de un catalogo especializado del cine new age de los 70-80 
                       Esta epoca que trajo una nueva generación de espectadores del septimo arte va estar acompañada
                      de tragos de autor y comidas especialmente seleccionadas para que tu experiencia sea completa
                 </div>
-                <div class="main__article__imgContainer">
+                <div class="col-md-5">
                     <img src="./imagenes/cinebar.jpg">
                 </div>
 
@@ -49,13 +71,13 @@
     
 
         <section class="main__section2">
-                <h3 class="main__section2__tit">Director del mes</h3>
+                <h3 id="main__title1" class="h3"><b>Director del mes</b> </h3>
 
                 <div class="main__section2_img">
                     <img src="./imagenes/aristarain.jpg" alt="">
                 </div>
                  
-                <h4 class="main__section2_subtit"><b>Adolfo Aristarain</b></h4>
+                <h4 id="main__title1" class="h3"><b>Adolfo Aristarain</b></h4>
                     <article class="main__section2_article">
                          <p> Este mes le rendimos homenaje a uno de los grandes directores del cine argentino. <br>
                          Aristarain es un director que tuvo sus mejores años en la epoca de la dictadura argentina. 
@@ -67,31 +89,31 @@
          <br>
          <br>
          
-            <section class="main__form">
-                <div class="main__form__all">
-                    <h5 class="main__form__title"><b>Elegi el Tanque del fin de semana</b> </h5>
+            <section class="main__form" >
+                <div id="main__form__all" class="row">
+                    <h5 id="main__title1" class="h3 text-center"><b>Elegi el Tanque del fin de semana</b> </h5>
         
-                <form class="main__form__quest">
+                <form id="main__form__quest" class="col-md5">
                     <table class="main__form__table"> 
-                        <tr>
+                        <tr class="row">
                              <td>Martin Scorsese:</td>
                              <td>Mean streets</td>
                              <td>(1973)</td>
                              <td><input class="main__input" type="checkbox"></td>
                         </tr>
-                        <tr>
+                        <tr class="row">
                              <td>William Friedkin:</td>
                              <td>The French Connection</td>
                              <td>(1971)</td>
                              <td><input class="main__input" type="checkbox"></td>
                         </tr>
-                        <tr>
+                        <tr class="row">
                              <td>Woody Allen: </td>
                              <td>Annie Hall</td>
                              <td>(1977)</td>
                              <td><input class="main__input" type="checkbox"></td>
                          </tr>
-                        <tr>
+                        <tr class="row">
                              <td>Sydney Lumet:</td>
                              <td>Network</td>
                              <td>(1976)</td>
@@ -103,7 +125,7 @@
                  </form>
                 </div>
 
-                <div class="main__form__img">
+                <div id="main__form__img" class="col-md-5">
                     <img src="./imagenes/tiempoderevancha.jpg" alt="">
                 </div>
                 
@@ -117,16 +139,34 @@
         <nav class="footer__nav">
             <div class="footer__nav__form">
                  <ul class="footer__nav__form">
-                     <form>
-                         <li><b>Nombre y apellido</b>  <input class="footer__input" type="name" required></li>   
-                         <li><b>Email</b>  <input class="footer__input" type="Email"  required></li> 
-                         <li><b>Numero</b> <input class="footer__input" type="number" required></li>  
-                         <li><b>Quiero recibir newsletter</b><input class="footer__input__checkbox" type="checkbox"></li> 
-                         <li><b>Motivo de contacto</b><br>
-                         <textarea class="footer__input__text" name="" id="" cols="30" rows="10"></textarea></li>
-                         <input class="footer__reset" type="reset" value="Limpiar formulario">
-                         <input class="footer__submit" type="submit" value="Enviar">
-                     </form>
+                    <form>
+                        <div class="mb-3">
+                          <label for="examplename" class="form-label">Nombre y apellido</label>
+                          <input type="name" class="form-control" id="footer__input">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="name" class="form-control" id="footer__input" >
+                          
+                        </div>
+                        
+                        <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Numero</label>
+                            <input type="numero" class="form-control" id="footer__input">
+                             </div>
+                             <div><input type="checkbox" class="form-check-input" id="footer__input__checkbox">
+                          <label class="form-check-label" for="exampleCheck1">Desea recibir nuestro newsletter</label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Motivo de contacto</label>
+                            <textarea class="form-control" id="footer__input__text" rows="3"></textarea>
+                          </div>
+                        </div>
+                        <input id="footer__reset" type="reset" value="Limpiar formulario">
+                        <button type="submit" class="btn " id="footer__submit">Enviar</button>
+            
+                        <div class="mb-3">
+                      </form>
                  </ul>
              </div>
             <div class="footer__nav__text"> 
@@ -145,6 +185,7 @@
         
 
     </footer>
-
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
