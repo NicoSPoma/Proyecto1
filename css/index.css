@@ -47,8 +47,8 @@ body {
     display: grid;
     background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
     font-size: 1.5rem;
-    padding: 0.5rem;
-    position: fixed;
+    padding: 0.2rem;
+    position: relative;
     width: 100%;
     font-weight: 700;
     z-index: 1;
@@ -99,6 +99,11 @@ body {
     transition: 0.3s;
     
 }
+#navbar__boton {
+    position: relative;
+    display: flex;
+    flex-wrap: initial;
+}
 
 /*Main*/
 
@@ -111,8 +116,8 @@ body {
 .main__section {
     display: grid;
     position: relative;
-    min-height: 40vh;
-    align-content: center;
+    min-height: 30vh;
+    align-content: flex-end;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -135,7 +140,6 @@ body {
 
 #main__title2 {
     position: relative;
-    
     text-shadow: 1px 1px 0 rgb(67, 170, 139);
     padding: 0.5rem;
 }
@@ -150,13 +154,9 @@ font-size: xx-large;
 }
 
 
-.main__articlecontainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 50%;
-    height: 50%
+#main__articlecontainer{
+    padding: 1rem;
+    
 
 }
 .main__article {
@@ -247,15 +247,21 @@ font-size: xx-large;
     
 }
 
-.main__form {
+#main__form {
     width: 100%;
     height: 100vh;
-    display:flex;
+    display:grid;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+#main__form__all {
+    display: flex;
+    flex-direction: row;
+
 }
 
 .main__form__title {
@@ -275,16 +281,23 @@ font-size: xx-large;
 }
 
 #main__form__quest {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     padding: 1rem;
     translate: right;
     text-align: center;
+    width: 100%;
     
 }
 
 #main__form__img {
+    display: flex;
+    flex-wrap: initial;
     position: relative;
     padding: 1rem;
+    text-align: end;
+    transform: scale(1) !important;
 }
 
 
@@ -296,6 +309,7 @@ font-size: xx-large;
     border-radius: .4rem;
     margin-top: 2rem;
     margin-inline: 1rem;
+    width: 100%;
     
 
 }
@@ -322,6 +336,8 @@ font-size: xx-large;
 }
 
 .main__input__send {
+    display: flex;
+    text-align: start;
     padding: 1rem;
     background: rgb(67, 170, 139);
     border: none;
@@ -348,7 +364,7 @@ padding: 0.5rem;
     font-size: 1rem;
     font-weight: 100;
     padding: 0.5rem;
-    height: 56rem;
+    
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -426,12 +442,14 @@ padding: 0.5rem;
 
 .footer__texto {
     padding: 0.4rem;
+    font-size: large;
 }
 .footer__redes__lista {
     margin-inline: 1rem;
     border: none;
     border-radius: .9rem;
     padding: 0.5rem;
+    font-size: large;
 }
 
 
@@ -439,6 +457,7 @@ padding: 0.5rem;
 background-color: #E9C46A;
 border: none;
 transition: 0.3s;
+color: black;
 }
 
 /*Pestañas*/
@@ -485,6 +504,22 @@ transition: 0.3s;
     margin-inline: 1rem;
 }
 
+.contacto__titulo {
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(67, 170, 139);
+    padding: 0.5rem;
+}
+.contacto__titulo:hover {
+        background: linear-gradient(50deg, rgb(38, 70, 83), rgb(67, 170, 139));
+        border: none;
+        transition: 0.3s;
+        border-radius: 1rem;
+        
+    
+}
+
 #contacto__input {
     display: block;
     width: 40rem;
@@ -496,7 +531,6 @@ transition: 0.3s;
 
 #contacto__input__checkbox {
     display: block;
-    width: 40rem;
     margin: auto;
     border: none;
     background-color:  rgb(42, 157, 143);
@@ -559,7 +593,7 @@ transition: 0.3s;
     font-weight: 200;
     padding: 0.5rem;
     width: 100%;
-    height: 5rem;
+  
 }
 .pestañas__nav {
     text-align: center;

@@ -17,7 +17,7 @@
             <a class="header__logo__text">Moviola Cine-Bar</a>
          </div>
         
-         <nav class="navbar navbar-expand-lg navbar-light ">
+         <nav id="navbar__boton" class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
     
              <h2 id="main__title1" class="h2"><b>EL LUGAR QUE ESTABAS ESPERANDO</b></h2>
         </section>
-        <section class="row">
+        <section id="main__articlecontainer" class="row">
             <article class="main__article">
                 <div id="main__article__textContainer" class="col-md-5" >
                      <p class="article1__p">La moviola Cine-Bar es ese lugar de encuentro y celebracíon
@@ -89,13 +89,13 @@
          <br>
          <br>
          
-            <section class="main__form" >
-                <div id="main__form__all" class="row">
+            <section id="main__form" class="row" >
+                
                     <h5 id="main__title1" class="h3 text-center"><b>Elegi el Tanque del fin de semana</b> </h5>
-        
+        <div id="main__form__all" >
                 <form id="main__form__quest" class="col-md5">
                     <table class="main__form__table"> 
-                        <tr class="row">
+                        <tr >
                              <td>Martin Scorsese:</td>
                              <td>Mean streets</td>
                              <td>(1973)</td>
@@ -121,12 +121,36 @@
                              </tr>
                 
                     </table>
-                         <input class="main__input__send" type="submit" value="Enviar">
-                 </form>
+                    <div>
+                        <input class="main__input__send" type="submit" value="Enviar">
+                    </form>
                 </div>
-
-                <div id="main__form__img" class="col-md-5">
-                    <img src="./imagenes/tiempoderevancha.jpg" alt="">
+                <div>
+                  <div id="main__form__img" class="col-md-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./imagenes/tiempoderevancha.jpg" class="d-block"  >
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="./imagenes/peli2.jpg"  class="d-block ">
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="./imagenes/peli3.jpg" class="d-block ">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+                 
+                </div>
                 </div>
                 
             
@@ -137,46 +161,15 @@
     
     <footer class="footer">
         <nav class="footer__nav">
-            <div class="footer__nav__form">
-                 <ul class="footer__nav__form">
-                    <form>
-                        <div class="mb-3">
-                          <label for="examplename" class="form-label">Nombre y apellido</label>
-                          <input type="name" class="form-control" id="footer__input">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="name" class="form-control" id="footer__input" >
-                          
-                        </div>
-                        
-                        <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Numero</label>
-                            <input type="numero" class="form-control" id="footer__input">
-                             </div>
-                             <div><input type="checkbox" class="form-check-input" id="footer__input__checkbox">
-                          <label class="form-check-label" for="exampleCheck1">Desea recibir nuestro newsletter</label>
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Motivo de contacto</label>
-                            <textarea class="form-control" id="footer__input__text" rows="3"></textarea>
-                          </div>
-                        </div>
-                        <input id="footer__reset" type="reset" value="Limpiar formulario">
-                        <button type="submit" class="btn " id="footer__submit">Enviar</button>
-            
-                        <div class="mb-3">
-                      </form>
-                 </ul>
-             </div>
+          
             <div class="footer__nav__text"> 
                  <p class="footer__texto">Todos los derechos reservados</p>
                  <p class="footer__texto">Seguinos en nuestras redes</p>
                  <article class="footer_redes">
                  
-                 <a class="footer__redes__lista" href="https://instagram.com/MoviolaBarCine">Instagram</a>
-                 <a class="footer__redes__lista" href="https://twitter.com/LamoviolaCineB">Twitter</a>
-                 <a class="footer__redes__lista" href="https://facebook.com/LaMoviolaCineBar">Facebook</a>
+                 <a class="footer__redes__lista" href="https://instagram.com/MoviolaBarCine"><b>Instagram</b></a>
+                 <a class="footer__redes__lista" href="https://twitter.com/LamoviolaCineB"><b>Twitter</b></a>
+                 <a class="footer__redes__lista" href="https://facebook.com/LaMoviolaCineBar"><b>Facebook</b></a>
                   </article>
              </div>
              
