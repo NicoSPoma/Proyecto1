@@ -1,0 +1,38 @@
+/*Normalize*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: $text;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: 'Noto Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    background-color: $background;
+    font-family: $text;
+}

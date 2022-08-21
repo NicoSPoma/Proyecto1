@@ -1,0 +1,53 @@
+/*Header*/
+.header {
+    display: grid;
+    background: linear-gradient(50deg, $primary, $secondary);
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    z-index: 1;
+    justify-content: center;
+
+        &__logo {
+         display: flex;
+         position: absolute;
+         align-content: center;
+         }
+
+        &__text {
+         display: flex;
+         justify-content: center;
+         font-weight: 800;
+         font-size: 2.8rem;
+         text-shadow: 1px 1px 0 $background;
+
+            :hover {
+             color: $fonts;
+             }
+    }
+    
+}
+
+
+.header__ul  {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+
+    .header__li {
+    margin-inline: $space-m ; 
+    border: none ;
+    border-radius: .4rem ;
+    padding: 0.1rem ;
+
+       &:hover{
+        background-color: $background ;
+        border: none ;
+        transition: 0.3s ;
+    
+        }
+    }
+}

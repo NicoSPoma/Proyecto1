@@ -1,0 +1,230 @@
+/*Main*/
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+}
+
+.main__section {
+    display: grid;
+    position: relative;
+    min-height: 30vh;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    &__title {
+    position: relative;
+    font-size: 2rem;
+    color: var(--fonts);
+    text-shadow: 1px 1px 0 $secondary;
+    padding: 0.5rem;
+
+        &:hover {
+        background: linear-gradient(50deg, $primary, $secondary);
+        border: none;
+        transition: 0.3s;
+        border-radius: 1rem;
+        }
+    }
+}
+
+
+
+
+.main__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 55vh;
+
+    &_text {
+    position: relative;
+    padding: 1rem;
+        p {
+         height: 100%;
+         font-size: 1.8em;
+         color: $fonts;
+         padding: $space-m;
+         }
+    }
+    &_img {
+    padding: $space-m;
+    transform: rotateY( 180deg);
+    
+    }
+}
+
+
+
+
+.main__mid {
+    display: grid;
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    justify-items: center;
+    align-items: start;
+
+    &_title {
+    position: relative;
+    text-align: center;
+    padding: $space-m;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 1px 1px 0 $secondary;
+
+       &:hover {
+        background: linear-gradient(50deg, $primary, $secondary);
+        border: none;
+        transition: 0.3s;
+        border-radius: $space-m;
+        }
+    }
+    &_img {
+    align-content: center;
+    justify-content: center;
+    padding: $space-m;
+    transform: rotateY( 180deg);
+    }
+
+    &_text {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding: $space-lg;
+    
+    }
+}
+
+
+
+.main__bottom {
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+
+    &_title {
+    position: relative;
+    font-size: 2rem;
+    color: $fonts;
+    text-shadow: 1px 1px 0 $secondary;
+    text-align: center;
+    padding: $space-m;
+    width: 35rem;
+
+       :hover {
+        background: linear-gradient(50deg, $primary, $secondary);
+        border: none;
+        transition: 0.3s;
+        border-radius: 1rem;
+        }
+    }
+    &_all {
+    display: flex;
+    flex-direction: row;
+
+        .main__bottom_form {
+         display: flex;
+         flex-wrap: wrap;
+         position: relative;
+         padding: $space-m;
+         translate: right;
+         text-align: center;
+         width: 100%;
+    
+           .main__bottom_table {
+            padding: $space-lg;
+            background-color: $secondary;
+            border: none;
+            border-radius: .4rem;
+            margin-top: 2rem;
+            margin-inline: 1rem;
+            width: 100%;
+
+                tr{
+                 display: block;
+                 width: 40rem;
+                 margin: auto;
+                 background: none;
+                 margin-top: 1rem;
+                 border: none;
+                 border-bottom: 2px dashed $background;
+                 outline: none;
+                 padding: 1.5rem;
+                 color: $fonts;
+                 border-radius: .4rem .4rem 0 0;
+                 font-size: larger;
+                 }
+                td {
+                 font-size: 1.2rem;
+                 padding: 0.5rem;
+                 }
+
+                .main__bottom_input:checked {
+                 width: 15px;
+                 height: 15px;
+                 accent-color: $background;
+                }
+            }
+
+           .main__bottom_send {
+             display: flex;
+             text-align: start;
+             padding: $space-m;
+             background: $secondary;
+             border: none;
+             border-radius: .4rem;
+             margin-top: 2rem;
+             margin-inline: 1rem;
+            cursor: pointer;
+            }
+        }
+
+        &_img {
+          display: flex;
+         flex-wrap: initial;
+         position: relative;
+         padding: 1rem;
+         text-align: end;
+         transform: scale(1) !important;
+         }
+    }
+}
+
+/*Main querie*/
+
+@Media (Min-widht: 480xp) {
+    .main {
+        display: grid;
+        width: 100%;
+    }
+    .body {
+        display: grid;
+        width: 100%;
+    }
+    .footer {
+        display: grid;
+        width: 100%;
+    }
+    .main__club{
+        display: grid;
+        width: 100%;
+        
+    }
+    .main__club__section{
+        display: grid;
+        width: 100%;
+        
+    }
+
+}

@@ -1,0 +1,47 @@
+/*Footer*/
+.footer {
+    display: grid;
+    width: 100%;
+    background: linear-gradient(50deg, $primary, $secondary);
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0.5rem;
+    
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    flex-wrap: nowrap;
+
+    &__nav {
+     text-align: center;
+     font-weight: 100;
+
+        &__nav_text {
+         font-size: 0.9rem;
+         display: inline-block;
+
+            .footer__texto {
+             padding: 0.4rem;
+             font-size: large;
+             }
+
+             .footer__redes {
+                .footer__redes__lista {
+                 margin-inline: 1rem;
+                 border: none;
+                 border-radius: .9rem;
+                 padding: 0.5rem;
+                 font-size: large;
+                    :hover{
+                     background-color: $background;
+                     border: none;
+                     transition: 0.3s;
+                     color: $fonts;
+                     }
+                 }
+             }
+         }
+     }
+}
