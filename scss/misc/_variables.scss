@@ -9,6 +9,22 @@
     /*Fonts*/
     $text: 'Noto Sans', sans-serif;
 
+    $font-sizes: (
+        text-xxxs: 0.8em,
+        text-xxs: 1em,
+        text-xs: 1.5em,
+        text-s: 1.8em,
+        text-m: 2em,
+        text-l: 2.5em,
+        text-xl: 2.8em,
+        text-xxl: 3em
+    );
+    @each $key, $val in $font-sizes {
+        .#{$key} {
+            font-size: $val;
+        }
+    }
+
     /*Space*/
     $space-m: 1rem;
     $space-lg: 2rem;

@@ -3,7 +3,7 @@
     display: grid;
     width: 100%;
     background: linear-gradient(50deg, $primary, $secondary);
-    font-size: 1rem;
+    font-size: map-get($font-sizes, text-xxs );
     font-weight: 100;
     padding: 0.5rem;
     
@@ -19,7 +19,7 @@
      font-weight: 100;
 
         &__nav_text {
-         font-size: 0.9rem;
+         font-size: map-get($font-sizes, text-xxs );
          display: inline-block;
 
             .footer__texto {

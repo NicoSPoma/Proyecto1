@@ -1,12 +1,10 @@
 /*Main*/
 .main {
-    width: 100%;
-    min-height: 100vh;
     display: grid;
 }
 
 .main__section {
-    display: grid;
+    @extend .main;
     position: relative;
     min-height: 30vh;
     align-content: flex-end;
@@ -16,7 +14,7 @@
 
     &__title {
     position: relative;
-    font-size: 2rem;
+    font-size: map-get($font-sizes, text-m );
     color: var(--fonts);
     text-shadow: 1px 1px 0 $secondary;
     padding: 0.5rem;
@@ -34,18 +32,14 @@
 
 
 .main__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 55vh;
+    @include flex (row, space-between,0);
 
     &_text {
     position: relative;
     padding: 1rem;
         p {
          height: 100%;
-         font-size: 1.8em;
+         font-size: map-get($font-sizes, text-s );
          color: $fonts;
          padding: $space-m;
          }
@@ -72,7 +66,7 @@
     position: relative;
     text-align: center;
     padding: $space-m;
-    font-size: 2rem;
+    font-size: map-get($font-sizes, text-m );
     color: black;
     text-shadow: 1px 1px 0 $secondary;
 
@@ -93,7 +87,7 @@
     &_text {
     position: relative;
     text-align: center;
-    font-size: 2rem;
+    font-size: map-get($font-sizes, text-m );
     color: black;
     padding: $space-lg;
     
@@ -115,7 +109,7 @@
 
     &_title {
     position: relative;
-    font-size: 2rem;
+    font-size: map-get($font-sizes, text-m );
     color: $fonts;
     text-shadow: 1px 1px 0 $secondary;
     text-align: center;
@@ -130,8 +124,7 @@
         }
     }
     &_all {
-    display: flex;
-    flex-direction: row;
+        @include flex (row, 0, 0);
 
         .main__bottom_form {
          display: flex;
@@ -163,10 +156,10 @@
                  padding: 1.5rem;
                  color: $fonts;
                  border-radius: .4rem .4rem 0 0;
-                 font-size: larger;
+                 font-size: map-get($font-sizes, text-m );
                  }
                 td {
-                 font-size: 1.2rem;
+                 font-size: map-get($font-sizes, text-xxs );
                  padding: 0.5rem;
                  }
 
@@ -209,21 +202,17 @@
         width: 100%;
     }
     .body {
-        display: grid;
-        width: 100%;
+        @extend .main;
     }
     .footer {
-        display: grid;
-        width: 100%;
+        @extend .main;
     }
     .main__club{
-        display: grid;
-        width: 100%;
+        @extend .main;
         
     }
     .main__club__section{
-        display: grid;
-        width: 100%;
+        @extend .main;
         
     }
 
