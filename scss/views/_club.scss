@@ -1,0 +1,61 @@
+.club__body {
+    display: grid;
+    width: 100%;
+    background-color: #E9C46A;
+    font-family: 'Noto Sans', sans-serif;
+}
+.main__club {
+    display: grid;
+    height: 80vh;
+}
+.main__club__div {
+    width: 100%;
+    height: 50%;
+}
+.main__club__section {
+    display: grid;
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: space-between;
+    align-items: start;
+    justify-items: center;
+}
+
+.club__title {
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(42, 157, 143);
+    padding: 0.5rem;
+}
+
+.main__club__article {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding: 2rem;
+}
+
+.club__footer {
+    display: grid;
+    background: linear-gradient(50deg, rgb(38, 70, 83), rgb(42, 157, 143));
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 0.5rem;
+    width: 100%;
+    height: 5rem;
+}
+.club__nav {
+    text-align: center;
+    font-weight: 500;
+}
+
+.club__nav__text {
+    font-size: 0.9rem;
+     display: inline-block;
+}

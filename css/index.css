@@ -297,3 +297,160 @@ body {
   .main, .main__section, .body, .footer, .main__club, .main__club__section {
     display: grid;
     width: 100%; } }
+
+.carta__title {
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 1px 1px 0 var(--secondary);
+  transform: translate(-50%, -50%); }
+
+.carta__article {
+  text-align: center; }
+
+.catalogo__img {
+  image-resolution: 500px 5oopx; }
+
+.club__body {
+  display: grid;
+  width: 100%;
+  background-color: #E9C46A;
+  font-family: 'Noto Sans', sans-serif; }
+
+.main__club {
+  display: grid;
+  height: 80vh; }
+
+.main__club__div {
+  width: 100%;
+  height: 50%; }
+
+.main__club__section {
+  display: grid;
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: space-between;
+  align-items: start;
+  justify-items: center; }
+
+.club__title {
+  position: relative;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 1px 1px 0 #2a9d8f;
+  padding: 0.5rem; }
+
+.main__club__article {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  padding: 2rem; }
+
+.club__footer {
+  display: grid;
+  background: linear-gradient(50deg, #264653, #2a9d8f);
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 0.5rem;
+  width: 100%;
+  height: 5rem; }
+
+.club__nav {
+  text-align: center;
+  font-weight: 500; }
+
+.club__nav__text {
+  font-size: 0.9rem;
+  display: inline-block; }
+
+.contacto {
+  background: var(--background);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 05rem;
+  text-align: center; }
+
+.contacto__nav {
+  text-align: center;
+  font-weight: 700; }
+
+.contacto__nav__form {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-inline: 1rem; }
+
+.contacto__titulo {
+  position: relative;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 1px 1px 0 #43aa8b;
+  padding: 0.5rem; }
+
+.contacto__titulo:hover {
+  background: linear-gradient(50deg, var(--primary), var(--secondary));
+  border: none;
+  transition: 0.3s;
+  border-radius: 1rem; }
+
+#contacto__input {
+  display: block;
+  width: 40rem;
+  margin: auto;
+  border: none;
+  background-color: #2a9d8f;
+  padding: 1rem; }
+
+#contacto__input__checkbox {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: #2a9d8f;
+  padding: 1rem;
+  cursor: pointer; }
+
+.contacto__nav__form__ul {
+  text-align: center;
+  padding: 1.5rem; }
+
+.contacto__nav__form li {
+  text-align: center; }
+
+#contacto__input__text {
+  background-color: #2a9d8f;
+  padding: 2rem;
+  width: 40rem;
+  translate: center; }
+
+#contacto__reset {
+  border: none;
+  background-color: #2a9d8f;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer; }
+
+#contacto__submit {
+  border: none;
+  background-color: #2a9d8f;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer; }
+
+.contacto__nav__text {
+  font-size: 0.9rem; }
+
+.contacto__nav__text {
+  display: inline-block; }
+
+.contacto__nav__text a {
+  padding: 1rem; }
