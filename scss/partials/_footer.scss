@@ -1,12 +1,9 @@
 /*Footer*/
 .footer {
     display: grid;
-    width: 100%;
     background: linear-gradient(50deg, $primary, $secondary);
-    font-size: map-get($font-sizes, text-xxs );
-    font-weight: 100;
+    font-size: map-get($font-sizes, text-xs );
     padding: 0.5rem;
-    
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -16,32 +13,30 @@
 
     &__nav {
      text-align: center;
-     font-weight: 100;
 
         &__nav_text {
-         font-size: map-get($font-sizes, text-xxs );
+         font-size: map-get($font-sizes, text-xs );
          display: inline-block;
+        }
+    &__texto {
+        padding: 0.4rem;
+        font-size: map-get($font-sizes , text-xs );
+        }
 
-            .footer__texto {
-             padding: 0.4rem;
-             font-size: large;
-             }
-
-             .footer__redes {
-                .footer__redes__lista {
-                 margin-inline: 1rem;
-                 border: none;
-                 border-radius: .9rem;
-                 padding: 0.5rem;
-                 font-size: large;
-                    :hover{
-                     background-color: $background;
-                     border: none;
-                     transition: 0.3s;
-                     color: $fonts;
-                     }
-                 }
-             }
+     &_redes {
+        &_lista {
+             width: 50px;
+            height: 50px;
+            margin-inline: 1rem;
+            padding: 0.5rem;
+                    
+                &_img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                 
+            }
+             
          }
      }
 }

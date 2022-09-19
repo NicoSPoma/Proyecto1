@@ -1,52 +1,36 @@
-.contacto {
-    background: var(--background);
-    font-size: 1.4rem;
-    font-weight: 400;
-    padding: 05rem;
+
+.contacto_texto_form {
+    padding: 0.4rem;
+    font-size: map-get($font-sizes , text-xs ); 
     text-align: center;
 }
-.contacto__nav {
-text-align: center;
-font-weight: 700;
 
-}
-.contacto__nav__form {
-text-align: center;
-padding: 2rem;
-margin-top: 2rem;
-margin-inline: 1rem;
+.contacto_titulo {
+    text-align: center;
 }
 
-.contacto__titulo {
-position: relative;
-font-size: 2rem;
-color: black;
-text-shadow: 1px 1px 0 rgb(67, 170, 139);
-padding: 0.5rem;
-}
-.contacto__titulo:hover {
-    background: linear-gradient(50deg, var(--primary), var(--secondary));
-    border: none;
-    transition: 0.3s;
-    border-radius: 1rem;
-    
+.contacto_titulo_text {
+         padding: 0.4rem;
+         font-size: map-get($font-sizes , text-xxs ); 
+         text-align: center; 
+         background-color: #f4a261;
+         border-radius: 1rem;
+        }
 
-}
-
-#contacto__input {
+.contacto__input {
 display: block;
 width: 40rem;
 margin: auto;
 border: none;
-background-color: rgb(42, 157, 143);
+background-color: rgb(42, 157, 143) !important;
 padding: 1rem;
 }
 
-#contacto__input__checkbox {
+.contacto__input__checkbox {
 display: block;
 margin: auto;
 border: none;
-background-color:  rgb(42, 157, 143);
+background-color:  rgb(42, 157, 143) !important;
 padding: 1rem;
 cursor: pointer;
 
@@ -59,7 +43,7 @@ padding: 1.5rem;
 text-align: center;
 
 }
-#contacto__input__text {
+.contacto__input__text {
 background-color:  rgb(42, 157, 143);
 padding: 2rem;
 width: 40rem;
@@ -69,20 +53,24 @@ translate: center;
 
 
 
-#contacto__reset{
+.contacto__reset{
 border: none;
 background-color:  rgb(42, 157, 143);
 padding: 1rem;
-text-align: center;
+align-items: center;
 cursor: pointer;
 }
 
-#contacto__submit {
+.contacto__submit {
 border: none;
 background-color:  rgb(42, 157, 143);
 padding: 1rem;
-text-align: center;
+align-items: center;
 cursor: pointer;
+}
+
+.contacto_boton {
+    text-align: center;
 }
 
 .contacto__nav__text {

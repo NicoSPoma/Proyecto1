@@ -10,13 +10,13 @@
     <meta name="keywords" content="Cine, Bar, Tragos, Peliculas, Comida, Reuniones, Amigos">
    <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/translated.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <header id="Header" class="header text-xs">
+    <header id="Header" class="header ">
         <div class="header__Logo">
-            <a class="header__text text-xl">Moviola Cine-Bar</a>
+            <a class="header__text ">Moviola Cine-Bar</a>
          </div>
         
          <nav id="header__nav" class="navbar navbar-expand-lg navbar-light ">
@@ -27,67 +27,89 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul  class="header__ul navbar-nav">
                   <li class="header__li nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="header__li_a nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
                   <li  class="header__li nav-item">
-                    <a class="nav-link active" href="./secciones/moviola club.html">Club</a>
+                    <a class="header__li_a nav-link active" href="./secciones/moviola club.html">Club</a>
                   </li>
                   <li  class="header__li nav-item">
-                    <a class="nav-link active" href="./secciones/carta.html">Carta</a>
+                    <a class="header__li_a nav-link active" href="./secciones/carta.html">Carta</a>
                   </li>
                   <li  class="header__li nav-item">
-                    <a class="nav-link active" href="./secciones/catalogo historico.html" >Catalogo</a>
+                    <a class="header__li_a nav-link active" href="./secciones/catalogo historico.html" >Catalogo</a>
                   </li>
                   <li  class="header__li nav-item">
-                    <a class="nav-link active" href="./secciones/contacto.html" >Contacto</a>
+                    <a class="header__li_a nav-link active" href="./secciones/contacto.html" >Contacto</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
-    <main  class="main container-xxl" >
+    <main  class="main " >
         <section class="main__section">
-            <h1  class="main__title h2"><b>BIENVENIDOS AL PRIMER CINE-BAR DE LA CIUDAD</b></h1>
-    
-             <h2  class="main__title h2"><b>EL LUGAR QUE ESTABAS ESPERANDO</b></h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/cine.png" class="d-block w-100" alt="cine">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/bar.png" class="d-block w-100" alt="bar">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/comida.png" class="d-block w-100" alt="comida">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
         </section>
-        <section  class="main__top row">
-                <div  class="main__top_text col-md-5" >
-                     <p class="main__top_text_a">La moviola Cine-Bar es ese lugar de encuentro y celebracíon
-                     donde vas a poder disfrutar de un catalogo especializado del cine new age de los 70-80 
-                      Esta epoca que trajo una nueva generación de espectadores del septimo arte va estar acompañada
-                     de tragos de autor y comidas especialmente seleccionadas para que tu experiencia sea completa
+        <section  class="main__top">
+            <h1 class="main__top_title"> <b>Bienvenidos a La Moviola!</b> </h1>
+                <div  class="main__top_text" >
+                     <p class="main__top_text_a">El bar temático que esperabas llego a la Ciudad. El lugar donde vas a encontrar tus clásicos del cine favoritos. 
+                      Combinados con tragos de autor y comidas especiales para que la experiencia sea completa. 
+                      En La Moviola buscamos que nuestros clientes sean parte de esta comunidad que ama tanto al séptimo arte como a la gastronomía. 
+
+ 
                 </div>
-                <div class="main__top_img col-md-5">
-                    <img src="./imagenes/cinebar.jpg">
-                </div>
+                
         </section>
 
         <section class="main__mid">
-                <h3  class="main__mid_title h3"><b>Director del mes</b> </h3>
+                <h3  class="main__mid_title "><b>Director del mes</b> </h3>
 
                 <div class="main__mid_img">
-                    <img src="./imagenes/aristarain.jpg" alt="">
+                    <img src="./img/scorsese.png" alt="">
                 </div>
                  
-                <h4 class="main__mid_title h3"><b>Adolfo Aristarain</b></h4>
+                <h4 class="main__mid_title "><b>Martin Scorsese</b></h4>
                     <article class="main__mid_text">
-                         <p> Este mes le rendimos homenaje a uno de los grandes directores del cine argentino. <br>
-                         Aristarain es un director que tuvo sus mejores años en la epoca de la dictadura argentina. 
-                          Su legado queda en obras maestras tales como "Tiempo de revancha" y "Los ultimos días de la victima", 
-                         entre otras, donde se las ingenio para criticar las injusticias que se vivian en la sociedad de una forma 
-                         tan artistica e ingeniosa que logro pasar las censuras de la epoca militar. </p> 
+                         <p> Este mes le rendimos homenaje a uno de los directores más icónicos e influyentes de la historia del cine. Con una trayectoria que abarca más de cincuenta años, 
+                          Scorsese supo mantenerse en lo más altos en base a filmar constantemente películas influyentes en cada década de su carrera. 
+                          Los temas que suele abordar son relacionados al catolicismo, el pecado y los excesos de las personas, el mundo criminal y la violencia que esta conlleva. En este mes dedicado a este enorme director nos centraremos en pasar distintos clásicos pasando por cada década de su cine, comenzando por los 70s hasta llegar al nuevo milenio. 
+                          En la sección de cartelera se encontrará la información completa. 
+                           </p> 
                      </article>
         </section>
          
-            <section class="main__bottom row" >
+            <section class="main__bottom" >
                 
-                  <h5 class="main__bottom_title h3 "><b>Elegi el Tanque del fin de semana</b> </h5>
-
+                  <h5 class="main__bottom_title "><b>Elegi el Tanque del fin de semana</b> </h5>
                     
         <div class="main__bottom_all" >
-                <form class="main__bottom_form col-md5">
+                <form class="main__bottom_form ">
                     <table class="main__bottom_table"> 
                         <tr class="row" >
                              <td>Martin Scorsese:</td>
@@ -118,9 +140,6 @@
                         <input class="main__bottom_send" type="submit" value="Enviar">
                     </form>
                 </div>
-                <div class="main__bottom_img col-md-5">
-                  <img src="./imagenes/tiempoderevancha.jpg" alt="">
-              </div>
             </section>
     </main>
 
@@ -133,9 +152,12 @@
                  <p class="footer__texto">Seguinos en nuestras redes</p>
                  <article class="footer_redes">
                  
-                 <a class="footer__redes__lista" href="https://instagram.com/MoviolaBarCine"><b>Instagram</b></a>
-                 <a class="footer__redes__lista" href="https://twitter.com/LamoviolaCineB"><b>Twitter</b></a>
-                 <a class="footer__redes__lista" href="https://facebook.com/LaMoviolaCineBar"><b>Facebook</b></a>
+                 <a class="footer_redes_lista" href="https://instagram.com/MoviolaBarCine">
+                  <img class="footer_redes_lista_img" src="./img/fb.png" alt="fb">
+                </a>
+                 <a class="footer_redes__lista" href="https://facebook.com/LaMoviolaCineBar">
+                  <img class="footer_redes_lista_img" src="./img/ig.png" alt="ig">
+                </a>
                   </article>
              </div>
              

@@ -5,7 +5,6 @@
     font-size: map-get($font-sizes, text-xs );
     padding: 0.2rem;
     position: relative;
-    width: 100%;
     font-weight: 700;
     z-index: 1;
     justify-content: center;
@@ -22,9 +21,10 @@
          font-weight: 800;
          font-size: map-get($font-sizes, text-xxl );
          text-shadow: 1px 1px 0 $background;
+         color: $fonts !important;
 
             :hover {
-             color: $fonts;
+             color: $fonts !important;
              }
     }
     
@@ -44,11 +44,15 @@
     border-radius: .4rem ;
     padding: 0.1rem ;
 
-       &:hover{
-        background-color: $background ;
+       &_a {
+        &:hover{
+        color: $background ;
         border: none ;
         transition: 0.3s ;
     
         }
+       }
+
+       
     }
 }

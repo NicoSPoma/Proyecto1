@@ -1,7 +1,5 @@
 /*Normalize*/
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,7 +8,6 @@ html {
 }
 
 body {
-    width: 100%;
     font-family: $text;
 }
 
@@ -32,7 +29,6 @@ select {
 
 body {
     display: grid;
-    width: 100%;
     background-color: $background;
     font-family: $text;
 }

@@ -1,20 +1,24 @@
-.carta__title{
-    position: absolute;
-    width: 100%;
-    height: 2rem;
-    text-align: center;
-    top: 15%;
-    left: 50%;
-    font-size: 2rem;
-    color: black;
-    text-shadow: 1px 1px 0 var(--secondary);
-    transform: translate(-50%, -50%);
-}
-
 .carta__article {
     text-align: center;
 }
+.carta__title {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f4a261;
+    border-radius: 1rem;
+    font-size: map-get($font-sizes , text-xxs );
+}
+.carta_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
 
-.catalogo__img {
-    image-resolution: 500px 5oopx;
+.carta_img {
+    width: 600px;
+    height: 800px;
+    padding: 2rem;
 }

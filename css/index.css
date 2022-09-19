@@ -38,7 +38,6 @@ html {
   font-size: 100%; }
 
 body {
-  width: 100%;
   font-family: "Noto Sans", sans-serif; }
 
 a {
@@ -56,7 +55,6 @@ select {
 
 body {
   display: grid;
-  width: 100%;
   background-color: #E9C46A;
   font-family: "Noto Sans", sans-serif; }
 
@@ -140,27 +138,20 @@ body {
           color: #000000; }
 
 /*Main*/
-.main, .main__section, .body, .footer, .main__club, .main__club__section {
+.main, .body, .footer, .main__club, .main__club__section {
   display: grid; }
 
-.main__section {
+.main__section__title {
   position: relative;
-  min-height: 30vh;
-  align-content: flex-end;
-  justify-content: center;
-  align-items: center;
-  justify-items: center; }
-  .main__section__title {
-    position: relative;
-    font-size: 2em;
-    color: var(--fonts);
-    text-shadow: 1px 1px 0 #43aa8b;
-    padding: 0.5rem; }
-    .main__section__title:hover {
-      background: linear-gradient(50deg, #264653, #43aa8b);
-      border: none;
-      transition: 0.3s;
-      border-radius: 1rem; }
+  font-size: 2em;
+  color: var(--fonts);
+  text-shadow: 1px 1px 0 #43aa8b;
+  padding: 0.5rem; }
+  .main__section__title:hover {
+    background: linear-gradient(50deg, #264653, #43aa8b);
+    border: none;
+    transition: 0.3s;
+    border-radius: 1rem; }
 
 .main__top {
   display: flex;
@@ -294,7 +285,7 @@ body {
 
 /*Main querie*/
 @Media (Min-widht: 480xp) {
-  .main, .main__section, .body, .footer, .main__club, .main__club__section {
+  .main, .body, .footer, .main__club, .main__club__section {
     display: grid;
     width: 100%; } }
 

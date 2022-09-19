@@ -1,44 +1,36 @@
 /*Main*/
 .main {
     display: grid;
+    width: 1900px;
 }
 
 .main__section {
-    @extend .main;
-    position: relative;
-    min-height: 30vh;
-    align-content: flex-end;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-    &__title {
-    position: relative;
-    font-size: map-get($font-sizes, text-m );
-    color: var(--fonts);
-    text-shadow: 1px 1px 0 $secondary;
-    padding: 0.5rem;
-
-        &:hover {
-        background: linear-gradient(50deg, $primary, $secondary);
-        border: none;
-        transition: 0.3s;
-        border-radius: 1rem;
-        }
-    }
+    width: 1902px;
+    height: 676px;
 }
 
-
-
-
 .main__top {
-    @include flex (row, space-between,0);
+    display: grid;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+
+    &_title {
+        padding: 1rem;
+        text-align: center;
+        background-color: #f4a261;
+        border-radius: 1rem;
+        font-size: 3em;
+    
+    
+    }
 
     &_text {
     position: relative;
     padding: 1rem;
         p {
-         height: 100%;
          font-size: map-get($font-sizes, text-s );
          color: $fonts;
          padding: $space-m;
@@ -57,31 +49,35 @@
 .main__mid {
     display: grid;
     position: relative;
-    width: 100%;
     min-height: 40vh;
     justify-items: center;
     align-items: start;
 
     &_title {
-    position: relative;
-    text-align: center;
-    padding: $space-m;
-    font-size: map-get($font-sizes, text-m );
-    color: black;
-    text-shadow: 1px 1px 0 $secondary;
-
-       &:hover {
-        background: linear-gradient(50deg, $primary, $secondary);
-        border: none;
-        transition: 0.3s;
-        border-radius: $space-m;
-        }
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 2em;
+        margin-inline: 3rem;
+        &:hover {
+            background-color: #f4a261;
+            border: 2rem;
+            transition: 0.3s;
+            }
     }
     &_img {
-    align-content: center;
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     padding: $space-m;
-    transform: rotateY( 180deg);
+
+         img  {
+        width: 1000px;
+         }
+
     }
 
     &_text {
@@ -90,15 +86,12 @@
     font-size: map-get($font-sizes, text-m );
     color: black;
     padding: $space-lg;
-    
     }
 }
 
 
 
 .main__bottom {
-    width: 100%;
-    height: 100vh;
     display:grid;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -108,20 +101,16 @@
     justify-items: center;
 
     &_title {
-    position: relative;
-    font-size: map-get($font-sizes, text-m );
-    color: $fonts;
-    text-shadow: 1px 1px 0 $secondary;
-    text-align: center;
-    padding: $space-m;
-    width: 35rem;
-
-       :hover {
-        background: linear-gradient(50deg, $primary, $secondary);
-        border: none;
-        transition: 0.3s;
+        padding: 1rem;
+        text-align: center;
         border-radius: 1rem;
-        }
+        font-size: 2em;
+        margin-inline: 3rem;
+        &:hover {
+            background-color: #f4a261;
+            border: none;
+            transition: 0.3s;
+            }
     }
     &_all {
         @include flex (row, 0, 0);
@@ -196,24 +185,18 @@
 
 /*Main querie*/
 
-@Media (Min-widht: 480xp) {
+@media (min-width: 480px) {
     .main {
-        display: grid;
-        width: 100%;
+         display: grid; 
     }
-    .body {
-        @extend .main;
+    .main__top {
+        max-width: 100%;
     }
-    .footer {
-        @extend .main;
+     
     }
-    .main__club{
-        @extend .main;
-        
-    }
-    .main__club__section{
-        @extend .main;
-        
+    @media (max-width: 920px) {
+        .main__top {
+            max-width: 100%;
+        }
     }
 
-}
